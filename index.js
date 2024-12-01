@@ -67,7 +67,6 @@ app.post("/addSchool", (req, res) => {
   });
 });
 
-
 // /listSchools Route
 app.get("/listSchools", (req, res) => {
     const { latitude, longitude } = req.query;

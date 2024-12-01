@@ -1,22 +1,21 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/addSchool",
-        "methods": ["POST"],
-        "dest": "/index.js"
-      },
-      {
-        "src": "/listSchools",
-        "methods": ["GET"],
-        "dest": "/index.js"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/addSchool",
+      "methods": ["POST"],
+      "dest": "/index.js"
+    },
+    {
+      "src": "/listSchools",
+      "methods": ["GET"],
+      "dest": "/index.js"
+    }
+  ]
+}
