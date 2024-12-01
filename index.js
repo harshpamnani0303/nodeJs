@@ -25,6 +25,10 @@ db.connect((err) => {
   console.log("Connected to the MySQL database.");
 });
 
+app.get("/",(req,res)=>{
+  res.send("hello");
+})
+
 // Define routes (after `db` is initialized)
 app.post("/addSchool", (req, res) => {
   const { name, address, latitude, longitude } = req.body;
