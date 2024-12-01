@@ -25,9 +25,7 @@ db.connect((err) => {
   console.log("Connected to the MySQL database.");
 });
 
-app.get("/",(req,res)=>{
-  res.send("hello");
-})
+
 
 // Define routes (after `db` is initialized)
 app.post("/addSchool", (req, res) => {
@@ -73,7 +71,7 @@ app.post("/addSchool", (req, res) => {
 });
 
 // /listSchools Route
-app.get("/listSchools", (req, res) => {
+app.get("/", (req, res) => {
     const { latitude, longitude } = req.query;
   
     // Validate latitude and longitude
