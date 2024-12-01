@@ -26,7 +26,7 @@ db.connect((err) => {
 });
 
 app.get("/",(req,res)=>{
-  res.send("helloo");
+  res.send("School Management");
 })
 
 // Define routes (after `db` is initialized)
