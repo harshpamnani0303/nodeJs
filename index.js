@@ -9,10 +9,11 @@ app.use(bodyParser.json());
 
 // Declare and initialize the `db` MySQL connection
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "", // Replace with your actual MySQL password
-  database: "test", // Replace with your actual database name
+  host: "b0ljpkttwazie6ycf6rl-mysql.services.clever-cloud.com",
+  user: "uv6ht2ulcibcvlkm",
+  password: "ugh7ye7soD7bZqXQIGQ6", // Replace with your actual MySQL password
+  database: "b0ljpkttwazie6ycf6rl", // Replace with your actual database name
+  port:3306
 });
 
 // Connect to MySQL database
